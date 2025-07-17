@@ -11,6 +11,7 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('handle submit triggered', import.meta.env.VITE_PUBLIC_KEY)
 
     emailjs
       .sendForm(

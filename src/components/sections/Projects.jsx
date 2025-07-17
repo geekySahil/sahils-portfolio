@@ -13,66 +13,27 @@ export const Projects = () => {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2"> Cloud Platform</h3>
-              <p className="text-gray-400 mb-4">
-                Scalable cloud infrastructure management with real-time
-                monitoring and automated scaling.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="flex justify-between items-center">
-                <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project →
-                </a>
-              </div>
-            </div>
+            {/* Skill Swap */}
             <div
-              className="
-              glass p-6 rounded-xl border border-white/10 
+              className="glass p-6 rounded-xl border border-white/10 
               hover:-translate-y-1 hover:border-blue-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
-              transition-all
-            "
+              transition-all"
             >
-              <h3 className="text-xl font-bold mb-2">AI Analytics Dashboard</h3>
-              <p className="text-gray-400 mb-4">
-                ML-powered data visualization platform with predictive analytics
-                and interactive reports.
+              <h2 className="text-2xl font-bold mb-5">✨ SkillSwap</h2>
+              <p className="text-gray-200 mb-4">
+                🤝 A platform for exchanging skills with no money involved.
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["Python", "TensorFlow", "D3.js", "Flask"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="
-                      bg-blue-500/10 text-blue-500 py-1 px-3 
-                      rounded-full text-sm
-                      transition
-                      hover:bg-blue-500/20 hover:-translate-y-0.5
-                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+              <ul className="list-none space-y-2 text-gray-300">
+                <li>🔍 Skill-based user matching</li>
+                <li>💬 Real-time chat (Socket.IO)</li>
+                <li>🎥 One-on-one video calls (WebRTC)</li>
+              </ul>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://skill-swap-client-8c8z.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →
@@ -80,40 +41,29 @@ export const Projects = () => {
               </div>
             </div>
 
+            {/* {Fashion arc} */}
             <div
-              className="
-              glass p-6 rounded-xl border border-white/10 
+              className="glass p-6 rounded-xl border border-white/10 
               hover:-translate-y-1 hover:border-blue-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
-              transition-all
-            "
+              transition-all"
             >
-              <h3 className="text-xl font-bold mb-2">E-Commerce Web App</h3>
-              <p className="text-gray-400 mb-4">
-                Full-stack e-commerce with modern UI, secure payment
-                integration, and customizable product inventory.
+              <h2 className="text-2xl font-bold mb-5">🛍️ FashionArc</h2>
+              <p className="text-gray-200 mb-4">
+                👗 A modern fashion e-commerce platform with a full-featured
+                admin panel.
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["Next.js", "TypeScript", "Stripe", "PostgreSQL"].map(
-                  (tech) => (
-                    <span
-                      key={tech}
-                      className="
-                      bg-blue-500/10 text-blue-500 py-1 px-3 
-                      rounded-full text-sm
-                      transition
-                      hover:bg-blue-500/20 hover:-translate-y-0.5
-                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
-              </div>
+              <ul className="list-none space-y-2 text-gray-300">
+                <li>🛒 Product browsing, cart, and checkout flow</li>
+                <li>
+                  📦 Admin dashboard for managing products, orders, and users
+                </li>
+              </ul>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://fashionarc.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →
@@ -121,41 +71,64 @@ export const Projects = () => {
               </div>
             </div>
 
+            {/* Xora App */}
             <div
-              className="
-              glass p-6 rounded-xl border border-white/10 
+              className="glass p-6 rounded-xl border border-white/10 
               hover:-translate-y-1 hover:border-blue-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
-              transition-all
-            "
+              transition-all"
             >
-              <h3 className="text-xl font-bold mb-2">Real-Time Chat App</h3>
-              <p className="text-gray-400 mb-4">
-                Scalable chat platform supporting real-time messaging, presence,
-                and group chat features.
+              <h2 className="text-2xl font-bold mb-5">📱 Xora</h2>
+              <p className="text-gray-200 mb-4">
+                🤖 A mobile app for uploading and sharing AI-generated short
+                videos.
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["Socket.IO", "Express", "React", "Redis"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="
-                      bg-blue-500/10 text-blue-500 py-1 px-3 
-                      rounded-full text-sm
-                      transition
-                      hover:bg-blue-500/20 hover:-translate-y-0.5
-                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify-between items-center ">
+              <ul className="list-none space-y-2 text-gray-300">
+                <li>🎬 Upload and view AI-generated short videos.</li>
+                <li>
+                  💬 Generate Your Own Playlist of your favourite AI Generated
+                  Videos
+                </li>
+              </ul>
+              <div className="flex justify-between items-center">
                 <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  href="https://github.com/geekySahil/Xora"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-400 hover:orange-red-300 transition-colors my-4"
                 >
-                  View Project →
+                  View Git Repo →
+                </a>
+              </div>
+            </div>
+
+            {/* youtube backend */}
+            <div
+              className="glass p-6 rounded-xl border border-white/10 
+              hover:-translate-y-1 hover:border-blue-500/30
+              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
+              transition-all"
+            >
+              <h2 className="text-2xl font-bold mb-5">🧰 YouTube Backend</h2>
+              <p className="text-gray-200 mb-4">
+                🎥 A Full Fledged API Almost Like youtube.
+              </p>
+              <ul className="list-none space-y-2 text-gray-300">
+                <li>📤 Video upload with thumbnail support</li>
+                <li>💬 Comment system with nested replies</li>
+                <li>👍 Like/Dislike tracking for videos</li>
+                <li>
+                  📈 Likes, Views and Subscriptions count tracking per channel
+                </li>
+              </ul>
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://github.com/geekySahil/videoTubeAPI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-400 hover:text-orange-300 transition-colors my-4"
+                >
+                  View Git Repo →
                 </a>
               </div>
             </div>
