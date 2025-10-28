@@ -31,7 +31,7 @@ export const Projects = () => {
               </ul>
               <div className="flex justify-between items-center">
                 <a
-                  href="https://skill-swap-client-8c8z.vercel.app/"
+                  href="https://skill-swap-client-sjuz.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
